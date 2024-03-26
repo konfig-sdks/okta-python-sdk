@@ -1,0 +1,26 @@
+# coding: utf-8
+
+"""
+    Okta API
+
+    Allows customers to easily access the Okta API
+
+    The version of the OpenAPI document: 2.16.0
+    Contact: devex-public@okta.com
+    Created by: https://developer.okta.com/
+"""
+
+import unittest
+
+import okta_python_sdk
+from okta_python_sdk.model.o_auth2_claim import OAuth2Claim
+from okta_python_sdk import configuration
+
+
+class TestOAuth2Claim(unittest.TestCase):
+    """OAuth2Claim unit test stubs"""
+    pass
+
+
+if __name__ == '__main__':
+    unittest.main()

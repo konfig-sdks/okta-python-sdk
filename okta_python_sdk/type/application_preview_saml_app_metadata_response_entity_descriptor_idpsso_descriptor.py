@@ -1,0 +1,40 @@
+# coding: utf-8
+
+"""
+    Okta API
+
+    Allows customers to easily access the Okta API
+
+    The version of the OpenAPI document: 2.16.0
+    Contact: devex-public@okta.com
+    Created by: https://developer.okta.com/
+"""
+
+from datetime import datetime, date
+import typing
+from enum import Enum
+from typing_extensions import TypedDict, Literal, TYPE_CHECKING
+
+from okta_python_sdk.type.application_preview_saml_app_metadata_response_entity_descriptor_idpsso_descriptor_key_descriptor import ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptorKeyDescriptor
+from okta_python_sdk.type.application_preview_saml_app_metadata_response_entity_descriptor_idpsso_descriptor_name_id_format import ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptorNameIdFormat
+from okta_python_sdk.type.application_preview_saml_app_metadata_response_entity_descriptor_idpsso_descriptor_single_logout_service import ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptorSingleLogoutService
+from okta_python_sdk.type.application_preview_saml_app_metadata_response_entity_descriptor_idpsso_descriptor_single_sign_on_service import ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptorSingleSignOnService
+
+class RequiredApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptor(TypedDict):
+    pass
+
+class OptionalApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptor(TypedDict, total=False):
+    KeyDescriptor: ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptorKeyDescriptor
+
+    NameIDFormat: ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptorNameIdFormat
+
+    SingleLogoutService: ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptorSingleLogoutService
+
+    SingleSignOnService: ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptorSingleSignOnService
+
+    WantAuthnRequestsSigned: bool
+
+    protocolSupportEnumeration: str
+
+class ApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptor(RequiredApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptor, OptionalApplicationPreviewSamlAppMetadataResponseEntityDescriptorIdpssoDescriptor):
+    pass

@@ -1,0 +1,11 @@
+from okta_python_sdk.paths.api_v1_brands_brand_id_templates_email_template_name_customizations_customization_id.get import ApiForget
+from okta_python_sdk.paths.api_v1_brands_brand_id_templates_email_template_name_customizations_customization_id.put import ApiForput
+from okta_python_sdk.paths.api_v1_brands_brand_id_templates_email_template_name_customizations_customization_id.delete import ApiFordelete
+
+
+class ApiV1BrandsBrandIdTemplatesEmailTemplateNameCustomizationsCustomizationId(
+    ApiForget,
+    ApiForput,
+    ApiFordelete,
+):
+    pass
